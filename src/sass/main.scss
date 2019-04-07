@@ -1,0 +1,44 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700');
+// Breakpoints.
+
+	@include breakpoints((
+		xlarge:   ( 1281px,  1680px ),
+		large:    ( 981px,   1280px ),
+		medium:   ( 737px,   980px  ),
+		small:    ( 481px,   736px  ),
+		xsmall:   ( 361px,   480px  ),
+		xxsmall:  ( null,    360px  ),
+		xlarge-to-max:    '(min-width: 1681px)',
+		small-to-xlarge:  '(min-width: 481px) and (max-width: 1680px)'
+	));
+
+// Base.
+
+	@import 'base/reset';
+	@import 'base/page';
+	@import 'base/typography';
+
+// Component.
+	@import 'components/form';
+	@import 'components/box';
+	@import 'components/icon';
+	@import 'components/image';
+	
+	// Application Component
+	@import 'components/application/list-page';
+	@import 'components/application/detail-page';
+	@import 'components/application/detail-page-contact';
+
+	
+// Layout.
+
+	@import 'layout/wrapper';
+	@import 'layout/main';
+	@import 'layout/header';
+	@import 'layout/menu';

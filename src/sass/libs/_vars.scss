@@ -1,0 +1,40 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		nav:				0.5s,
+		transition:			0.2s
+	);
+
+// Size.
+	$size: (
+		border-radius:		0.375em,
+		element-height:		2.75em,
+		element-margin:		2em,
+		sidebar-width:		26em,
+		sidebar-width-alt:	24em,
+		gutter:				3em
+	);
+
+// Font.
+$font: ( family: ('Roboto', sans-serif), family-heading: ('Open Sans', serif), family-fixed: ('Courier New', monospace), 
+weight-light: 300, weight-normal: 400, weight-medium:500, weight-semi-bold: 600, weight-bold: 700, weight-extra-bold: 800, weight-heavy-bold: 900);
+
+// Palette.
+$palette: ( 
+	bg: #EEEEEE, 
+	bg-alt: #FFFFFF, 
+	fg: #4D4D4D, 	
+	fg-nav:#333333,
+	fg-logo:#D90E0E,
+	fg-light:#707070,	
+	border-bg: #F0F0EE,//transparentize(#e6ebed, 0.75), 
+	border-alt: #D8D8D8, 
+	accent: #f56a6a,
+	positive: ( bg: #1cb495, fg: #ffffff ), 
+	negative: ( bg: #ff2361, fg: #ffffff ),
+	form-bg:#FFFFFF,
+	price-tag:#E01A1A );

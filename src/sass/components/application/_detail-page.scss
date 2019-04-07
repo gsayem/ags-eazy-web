@@ -1,0 +1,324 @@
+/*Detail-Page*/
+
+.item-detail-container {
+  margin-left: 83px;
+  //margin-right: 101px;
+  @include breakpoint("<=large") {
+    margin-left: 30px;
+    margin-right: 0px;
+  }
+  @include breakpoint("<=small") {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .bread-cumb {
+    font-family: _font(family-heading);
+    font-weight: normal;
+    font-size: 11px;
+    text-align: left;
+    padding-top: 30px;
+
+    @include breakpoint("<=small") {
+      display: none;
+    }
+  }
+
+  .item-detail {
+    .item-title {
+      font-family: _font(family-heading);
+      font-weight: _font(weight-semi-bold);
+      font-size: 20px;
+      text-align: left;
+      max-width: 664px;
+      @include breakpoint("<=medium") {
+        max-width: 400px;
+      }
+      @include breakpoint("<=small") {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    .text {
+      font-family: _font(family-heading);
+      font-weight: _font(weight-normal);
+      font-size: 12px;
+      text-align: left;
+      color: _palette(fg-light);
+    }
+    .value {
+      font-family: _font(family-heading);
+      font-weight: _font(weight-normal);
+      font-size: 14px;
+      text-align: left;
+      color: _palette(fg-nav);
+    }
+    .item-detail-row {
+      display: flex;
+      .item-detail-left {
+        margin-right: 22px;
+      }
+      @include breakpoint("<=small") {
+        display: contents;
+        .item-detail-left {
+          margin-right: 0px;
+        }
+      }
+    }
+    .item-img {
+      display: inline-block;
+      text-align: center;
+      border: 1px solid #b9b9b9;
+      box-sizing: border-box;
+      position: relative;
+      height: 493px;
+      width: 662px;
+
+      @include breakpoint("<=medium") {
+        height: 492px;
+        width: 400px;
+      }
+      @include breakpoint("<=small") {
+        height: 240px;
+        width: 100%; //320px;
+      }
+    }
+    .item-desc-sec {
+      width: 664px;
+      @include breakpoint("<=medium") {
+        width: 400px;
+      }
+      @include breakpoint("<=small") {
+        margin-left: 10px;
+        width: calc(100% - 20px);
+      }
+      margin-top: 22px;
+      .item-desc-sec-row {
+        display: flex;
+        .item-desc-right {
+          margin-left: auto;
+        }
+      }
+
+      .item-desc-title {
+        font-family: _font(family-heading);
+        font-weight: _font(weight-semi-bold);
+        font-size: 16px;
+        text-align: left;
+        color: _palette(price-tag);
+      }
+      .red-border {
+        width: 104px;
+        border: 1px solid _palette(price-tag);
+      }
+      .item-report-ad {
+        text-align: right;
+        font-family: _font(family-heading);
+        font-weight: _font(weight-normal);
+        font-size: 14px;
+        color: _palette(fg-light);
+        .fa-flag {
+          font-size: 15px;
+        }
+        span {
+          margin-left: 9px;
+        }
+      }
+      .item-desc-det {
+        margin-top: 15px;
+        p {
+          text-align: justify;
+        }
+      }
+
+      .empty-border {
+        margin-top: 21px;
+        width: 100%;
+        // @include breakpoint('<=small') {
+        //   margin-left: -7px;
+        // width: 100%;
+        // }
+      }
+    }
+    .detail-price {
+      min-width: 326px;
+      display: inline-block;
+      padding-left: 33px;
+      border: 1px solid _palette(border-bg);
+      box-sizing: border-box;
+      position: relative;
+      @include breakpoint("<=small") {
+        min-width: calc(100% - 10px);
+        display: inline-block;
+        padding-left: 0px;
+        border: 0px;
+        box-sizing: border-box;
+        position: relative;
+        margin-left: 0px;
+        .price-and-contact-info {
+          margin-left: 10px;
+        }
+      }
+      .wish-share {
+        display: flex;
+        font-family: _font(family-heading);
+        padding-left: 2px;
+        .wish {
+          top: 13px;
+          position: relative;
+          padding-left: 25px;
+          padding-top: 4px;
+        }
+        .share {
+          top: 13px;
+          position: relative;
+          padding-left: 25px;
+          padding-top: 4px;
+          ::before {
+            padding-right: 15px;
+            font-size: 17px;
+          }
+        }
+      }
+
+      .price-info {
+        margin-top: 20px;
+        .price-text {
+          font-family: _font(family-heading);
+          font-weight: _font(weight-normal);
+          font-size: 12px;
+          text-align: left;
+          color: _palette(fg-light);
+        }
+        .price-value {
+          font-family: _font(family-heading);
+          font-weight: _font(weight-semi-bold);
+          font-size: 20px;
+          text-align: left;
+          color: _palette(price-tag);
+        }
+      }
+      .item-condition-info,
+      .item-location-info,
+      .seller-info {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .seller-detail-row {
+          display: flex;
+          .seller-detail-left {
+            height: 48px;
+            width: 48px;
+          }
+        }
+        .seller-detail-info {
+          padding-left: 2px;
+        }
+      }
+      .empty-border {
+        margin-top: 10px;
+        margin-left: -34px;
+        width: 112%;
+      }
+    }
+    .similar-item-section {
+      margin-top: 24px;
+      width: 100%;
+      margin-bottom: 35px;
+      @include breakpoint("<=small") {
+        margin-bottom: 50px;
+      }
+      .similar-item-title {
+        font-family: _font(family-heading);
+        font-weight: _font(weight-semi-bold);
+        font-size: 16px;
+        text-align: left;
+        color: _palette(fg-light);
+        @include breakpoint("<=small") {
+          margin-left: 10px;
+        }
+      }
+      .similar-item-list {
+        margin-top: 7px;
+        @include breakpoint("<=large") {
+          margin-left: 10px;
+          .similar-item-group {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            overflow-y: overlay;
+            .form-item {
+              box-sizing: border-box;
+              max-width: 50%;
+            }
+          }
+        }
+        .similar-item-group {
+          // display: flex;
+          // overflow: scroll;
+          // white-space: nowrap;
+          // overflow-y: hidden;
+          @include breakpoint("<=large") {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            overflow-y: overlay;
+            .form-item {
+              box-sizing: border-box;
+              max-width: 50%;
+            }
+          }
+          @include breakpoint("<=small") {
+            justify-content: center;
+          }
+          .item-img-thumb {
+            width: 123px;
+            display: inline-block;
+          }
+        }
+        .form-item {
+          min-height: 180px; // To maintan same size
+          display: inline-block;
+          width: 123px;
+          text-align: center;
+          border: 1px solid _palette(border-alt);
+          border-radius: 2px;
+          box-sizing: border-box;
+          position: relative;
+          margin-bottom: 10px;
+          margin-right: 13px;
+          cursor: pointer;
+          .item-desc {
+            font-family: _font(family-heading);
+            font-weight: _font(weight-normal);
+            font-size: 10px;
+            color: _palette(fg-light);
+            text-align: left;
+            white-space: pre-wrap; /* CSS3 */
+            white-space: -moz-pre-wrap; /* Firefox */
+            white-space: -pre-wrap; /* Opera <7 */
+            white-space: -o-pre-wrap; /* Opera 7 */
+            word-wrap: break-word; /* IE */
+            padding-bottom: 30px;
+            padding-left: 9px;
+            padding-right: 8px;
+          }
+          .item-price {
+            position: absolute;
+            bottom: 0;
+            color: _palette(price-tag);
+            padding-left: 9px;
+            padding-right: 8px;
+            p {
+              text-align: left;
+              font-weight: bold;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

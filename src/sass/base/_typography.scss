@@ -1,0 +1,88 @@
+/* Type */
+
+body,
+input,
+select,
+textarea {
+  color: _palette(fg);
+  font-family: _font(family);
+  font-size: 13px;
+  font-weight: _font(weight);
+  line-height: 1.65;
+
+  @include breakpoint("<=xlarge") {
+    font-size: 12px;
+  }
+
+  @include breakpoint("<=large") {
+    font-size: 12px;
+  }
+
+  @include breakpoint("<=xxsmall") {
+    font-size: 12px;
+  }
+}
+
+a {
+  @include vendor(
+    "transition",
+    ("color #{_duration(transition)} ease-in-out", "border-bottom-color #{_duration(transition)} ease-in-out")
+  );
+  border-bottom: solid 1px;
+  color: _palette(fg-nav);
+  text-decoration: none;
+
+  &:hover {
+    border-bottom-color: _palette(accent);
+    color: _palette(accent) !important;
+    text-decoration: none;
+    strong {
+      color: inherit;
+    }
+  }
+}
+
+strong,
+b {
+  color: _palette(fg-bold);
+  font-weight: _font(weight-bold);
+}
+
+p {
+  //margin: 0 0 _size(element-margin) 0;
+  text-align: left;
+}
+
+@include breakpoint("<=xlarge") {
+  p {
+    font-size: 12px;
+  }
+}
+
+@include breakpoint("<=medium") {
+  p {
+    font-size: 12px;
+  }
+}
+
+@include breakpoint("<=small") {
+  p {
+    font-size: 12px;
+  }
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
+}

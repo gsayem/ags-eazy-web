@@ -1,0 +1,12 @@
+/* Box */
+
+.empty-border{
+	width: 100%;  
+	border: 1px solid _palette(border-bg);  
+  }
+  .red-round-border{
+	width: 100%;  
+	height: 36px;
+	border: 1px solid _palette(price-tag);  
+	border-radius: 4px;    
+  }

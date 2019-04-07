@@ -1,0 +1,168 @@
+{
+    "id": "12",
+    "data": [
+        {
+            "id": "2",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey Joy-Con",
+                "price": "RM 1,200",
+                "image": "/image/2.jpg",
+                "href": "/view/2.html"
+            }
+        },
+        {
+            "id": "3",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch neon Joy-Con",
+                "price": "RM 1,288",
+                "image": "/image/3.jpg",
+                "href": "/view/3.html"
+            }
+        },
+        {
+            "id": "4",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey fullset warranty",
+                "price": "RM 1,299",
+                "image": "/image/4.jpg",
+                "href": "/view/4.html"
+            }
+        },
+        {
+            "id": "5",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey fullset warranty",
+                "price": "RM 1,239",
+                "image": "/image/5.jpg",
+                "href": "/view/5.html"
+            }
+        },
+        {
+            "id": "6",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey fullset warranty",
+                "price": "RM 1,270",
+                "image": "/image/6.jpg",
+                "href": "/view/6.html"
+            }
+        },
+        {
+            "id": "7",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey Joy-Con",
+                "price": "RM 1,299",
+                "image": "/image/7.jpg",
+                "href": "/view/7.html"
+            }
+        },
+        {
+            "id": "8",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey Joy-Con",
+                "price": "RM 1,239",
+                "image": "/image/8.jpg",
+                "href": "/view/8.html"
+            }
+        },
+        {
+            "id": "9",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey Joy-Con",
+                "price": "RM 1,270",
+                "image": "/image/9.jpg",
+                "href": "/view/9.html"
+            }
+        },
+        {
+            "id": "2",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey Joy-Con",
+                "price": "RM 1,200",
+                "image": "/image/2.jpg",
+                "href": "/view/2.html"
+            }
+        },
+        {
+            "id": "3",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch neon Joy-Con",
+                "price": "RM 1,288",
+                "image": "/image/3.jpg",
+                "href": "/view/3.html"
+            }
+        },
+        {
+            "id": "4",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey fullset warranty",
+                "price": "RM 1,299",
+                "image": "/image/4.jpg",
+                "href": "/view/4.html"
+            }
+        },
+        {
+            "id": "5",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey fullset warranty",
+                "price": "RM 1,239",
+                "image": "/image/5.jpg",
+                "href": "/view/5.html"
+            }
+        },
+        {
+            "id": "6",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey fullset warranty",
+                "price": "RM 1,270",
+                "image": "/image/6.jpg",
+                "href": "/view/6.html"
+            }
+        },
+        {
+            "id": "7",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey Joy-Con",
+                "price": "RM 1,299",
+                "image": "/image/7.jpg",
+                "href": "/view/7.html"
+            }
+        },
+        {
+            "id": "8",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey Joy-Con",
+                "price": "RM 1,239",
+                "image": "/image/8.jpg",
+                "href": "/view/8.html"
+            }
+        },
+        {
+            "id": "9",
+            "type": "similar_item",
+            "attributes": {
+                "title": "Nintendo Switch grey Joy-Con",
+                "price": "RM 1,270",
+                "image": "/image/9.jpg",
+                "href": "/view/9.html"
+            }
+        }
+    ],
+    "meta": {
+        "count": "16"
+    }
+}

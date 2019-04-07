@@ -1,0 +1,19 @@
+/* Icon */
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wish::after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: -5px;
+  top: 0px;
+  font-weight: 400;
+  color: _palette(fg-light);
+  font-size: 20px;
+}
