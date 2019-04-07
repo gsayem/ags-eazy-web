@@ -116,6 +116,7 @@
         font-weight: _font(weight-normal);
         font-size: 14px;
         color: _palette(fg-light);
+        cursor: pointer;
         .fa-flag {
           font-size: 15px;
         }
@@ -162,6 +163,9 @@
         display: flex;
         font-family: _font(family-heading);
         padding-left: 2px;
+        .icon {
+          cursor: pointer;
+        }
         .wish {
           top: 13px;
           position: relative;
