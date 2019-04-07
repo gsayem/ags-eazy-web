@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SimilarItems from '../components/SimilarItems';
 import { fetchSimilarDataByIdIfNeeded } from '../actions/MyActions'
+import parse from 'html-react-parser';
 export default class ItemDetail extends Component {
     constructor(props) {
         super(props)
@@ -17,7 +18,7 @@ export default class ItemDetail extends Component {
     }
 
     render() {
-        const { itemId, requestDataById } = this.props
+        const { itemId, requestDataById } = this.props        
         return (
             <div className="item-detail-container">
                 <div className="bread-cumb">
@@ -157,7 +158,9 @@ export default class ItemDetail extends Component {
                             </div>
                         </div>
                         <div className="item-desc-det">
-                            <p>{requestDataById.data.attributes.description}</p>
+                            <p>
+                                {parse(requestDataById.data.attributes.description.replace(/\\n/g, '<br/>'))}
+                            </p>
                         </div>
                         <div className="empty-border" />
                     </div>
@@ -180,3 +183,4 @@ export default class ItemDetail extends Component {
         )
     }
 }
+
