@@ -70,15 +70,15 @@
       border: 1px solid #b9b9b9;
       box-sizing: border-box;
       position: relative;
-      height: 493px;
+      height: 100%;
       width: 662px;
 
       @include breakpoint("<=medium") {
-        height: 492px;
+        height: 100%;
         width: 400px;
       }
       @include breakpoint("<=small") {
-        height: 240px;
+        height: 100%;
         width: 100%; //320px;
       }
     }
