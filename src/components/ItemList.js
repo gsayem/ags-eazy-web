@@ -33,8 +33,8 @@ export default class Item extends Component {
 							{this.props.posts.map((post, i) =>
 								<div key={i} className={(i + 1) % 3 === 0 ? "form-item form-item-thr" : "form-item"} onClick={() => this.handleClick(post.id)} >
 									<div className="item-img-thumb">
-										<object data="/images/ImageNotFound.png" type="image/png">
-											<img src={post.attributes.links.image} alt={post.attributes.title} />
+										<object data={post.attributes.links.image}>
+											<img src="/images/ImageNotFound.png" alt={post.attributes.title} />
 										</object>
 									</div>
 									<div className="item-desc">
