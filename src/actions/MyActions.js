@@ -1,11 +1,5 @@
 import fetch from 'cross-fetch'
-
-export const LIST_DATA_URL = 'https://raw.githubusercontent.com/gsayem/ags-eazy-web/master/public/list_687.json'
-//export const DETAIL_DATA_URL = 'http://5b35ede16005b00014c5dc86.mockapi.io/view/'
-//export const DETAIL_DATA_URL = 'https://raw.githubusercontent.com/gsayem/ags-eazy-web/master/public/DetailData/DETAIL_DATA_URL1.json'
-
-//export const SIMILAR_ITEM_DATA_URL = 'http://5b35ede16005b00014c5dc86.mockapi.io/similar/'
-
+export const LIST_DATA_URL = 'https://raw.githubusercontent.com/gsayem/ags-eazy-web/master/public/list.json'
 export const REQUEST_DATA = 'REQUEST_DATA'
 export const REQUEST_DATA_BY_ID = 'REQUEST_DATA_BY_ID'
 export const SIMILAR_ITEM_DATA = 'SIMILAR_ITEM_DATA'

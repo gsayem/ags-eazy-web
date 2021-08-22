@@ -12,8 +12,8 @@ export default class Header extends Component {
                     <Navbar expand="lg" variant="light" bg="light" fixed="top">
                         <Container>
                             <Navbar.Brand className="logo" href="/home">
-                                <span className="first-part">eazy</span>
-                                <span className="second-part">.my</span>
+                                <span className="first-part">sayem</span>
+                                <span className="second-part">.xyz</span>
                             </Navbar.Brand>
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
