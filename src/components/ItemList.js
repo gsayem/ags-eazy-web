@@ -20,7 +20,6 @@ export default class Item extends Component {
 		});
 	}
 
-
 	render() {		
 		return (
 			<div className="item-component">

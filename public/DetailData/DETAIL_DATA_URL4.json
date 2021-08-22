@@ -16,6 +16,6 @@
     },
     "links": {
         "self": "/view/4.html",
-        "image": "/image/4.jpg"
+        "image": "https://picsum.photos/660/491/?image=4"
     }
 }

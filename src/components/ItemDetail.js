@@ -23,7 +23,7 @@ export default class ItemDetail extends Component {
         return (
             <div className="item-detail-container">
                 <div className="bread-cumb">
-                    <span>Home > Electronics > Games & Console ><a href="##"> {requestDataById.data.attributes.title} </a></span>
+                    <span>Home &gt; Electronics &gt; Games &amp; Console &gt;<a href="##"> {requestDataById.data.attributes.title} </a></span>
                 </div>
                 <div className="item-detail">
                     <div className="item-title">
