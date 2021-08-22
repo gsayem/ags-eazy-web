@@ -6,6 +6,7 @@ export default class ItemDetail extends Component {
     constructor(props) {
         super(props)
         this.state = { similarData: [] }
+
     }
 
     componentDidMount() {
@@ -18,7 +19,7 @@ export default class ItemDetail extends Component {
     }
 
     render() {
-        const { itemId, requestDataById } = this.props        
+        const { itemId, requestDataById } = this.props     
         return (
             <div className="item-detail-container">
                 <div className="bread-cumb">
@@ -32,9 +33,10 @@ export default class ItemDetail extends Component {
                     <div className="item-detail-row">
                         <div className="item-detail-left">
                             <div className="item-img">
-                               <object data="/images/ImageNotFound_large.png">
-                                    <img src="/images/ImageNotFound_large.png" alt={requestDataById.data.attributes.title} />
-                                </object>
+                            <img src={requestDataById.links.image} alt={requestDataById.data.attributes.title} />
+                                {/* <object data="/images/ImageNotFound_large.png">
+                                     <img src="/images/ImageNotFound_large.png" alt={requestDataById.data.attributes.title} />
+                                 </object> */}
                                 {/* <object data={"https://picsum.photos/140/78/?image=" + itemId} type="image/png">
                                     <img src="/images/ImageNotFound_large.png" alt={requestDataById.data.attributes.title} />
                                 </object> */}

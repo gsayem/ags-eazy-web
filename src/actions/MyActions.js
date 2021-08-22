@@ -1,7 +1,9 @@
 import fetch from 'cross-fetch'
 
-export const LIST_DATA_URL = 'http://5b35ede16005b00014c5dc86.mockapi.io/list'
-export const DETAIL_DATA_URL = 'http://5b35ede16005b00014c5dc86.mockapi.io/view/'
+export const LIST_DATA_URL = 'https://raw.githubusercontent.com/gsayem/ags-eazy-web/master/public/list_687.json'
+//export const DETAIL_DATA_URL = 'http://5b35ede16005b00014c5dc86.mockapi.io/view/'
+//export const DETAIL_DATA_URL = 'https://raw.githubusercontent.com/gsayem/ags-eazy-web/master/public/DetailData/DETAIL_DATA_URL1.json'
+
 export const SIMILAR_ITEM_DATA_URL = 'http://5b35ede16005b00014c5dc86.mockapi.io/similar/'
 
 export const REQUEST_DATA = 'REQUEST_DATA'
@@ -23,6 +25,10 @@ export function invalidateData(agsEazy) {
     type: INVALIDATE_DATA,
     agsEazy
   }
+}
+
+function getDetailDataURLById(id) {  
+  return "https://raw.githubusercontent.com/gsayem/ags-eazy-web/master/public/DetailData/DETAIL_DATA_URL" + id + ".json";
 }
 
 function requestData(agsEazy) {
@@ -93,7 +99,9 @@ function receiveDataById(id, agsEazy, json, state) {
 function fetchDataById(id, agsEazy) {
   return (dispatch, getState) => {
     dispatch(requestDataById(id, agsEazy))
-    var detailData = fetch(DETAIL_DATA_URL + id).then(response => response.json()).then(json => dispatch(receiveDataById(id, "detailData", json, getState())));
+    //var detailData = fetch(DETAIL_DATA_URL + id).then(response => response.json()).then(json => dispatch(receiveDataById(id, "detailData", json, getState())));
+    var detailData = fetch(getDetailDataURLById(id)).then(response => response.json()).then(json => dispatch(receiveDataById(id, "detailData", json, getState())));
+
     return detailData;
   }
 }
