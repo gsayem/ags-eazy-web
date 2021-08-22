@@ -179,7 +179,6 @@ export default class ItemDetail extends Component {
                             {this.state.similarData.length > 0 && (
                                 <SimilarItems itemId={itemId} similarData={this.state.similarData} />
                             )}
-
                         </div>
                     </div>
 
