@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import Root from "./containers/Root";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 
 const routes = (
   // <BrowserRouter>
@@ -11,12 +11,9 @@ const routes = (
   //     <Redirect from="/" to="/home" />
   //   </Switch>
   // </BrowserRouter>
-  <Routes>
-    <Route path="*" element={<Navigate to="/" replace={true} />} />
-    <Route path="/" element={<Root />}>
-      <Route index element={<Root />} />
-    </Route>
-  </Routes>
+  <BrowserRouter>
+    <Root />
+  </BrowserRouter>
 );
 
 ReactDOM.render(routes, document.getElementById("root"));
